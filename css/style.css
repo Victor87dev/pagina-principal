@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+/* Estilos da Main */
+main .box{
+    margin: 20px;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #1B1B1B;
+}
+/* Estilos da CaixaS */
+.boxtitle h1{
+    text-align: center;
+}
+
+.boxtitle h1 span{
+   color: #0A2E8C;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.flexbox > div{
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+    
+}
+.flexbox .item-1,
+.flexbox .item-2,
+.flexbox .item-3 {
+    border-radius: 15px;
+    color: white;
+    margin: 25px;
+}
+.flexbox > div img {
+    width: 41px;
+    height: 50px;
+}
+.flexbox .item-1{
+    background: linear-gradient(58deg, #020A1E 19.59%, #0F3083 105.59%);
+}
+.flexbox .item-2{
+    background: linear-gradient(180deg, #020A1E 7.55%, #0F3083 158.57%);
+}
+.flexbox .item-3{
+    background: linear-gradient(293deg, #020A1E 31.07%, #0F3083 110.93%);
+}
+@media only screen and (max-width: 768px) {
+    .flexbox > div {
+        flex: 100%; 
+        max-width: none;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+}
