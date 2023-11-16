@@ -189,5 +189,89 @@ main{
     }
 }
 
+@media (max-width: 1300px){
+    
+    main{
+        height: 100%;
+    }
+
+    .sessao-coleta{
+        height: 100%;
+    }
+
+    .box-coleta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        height: 85%;
+    }
+
+    .sessao-coleta > h1{
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .sessao-coleta > p{
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .box-individual{
+        height: 50%;
+        width: 80%;
+    }
+
+    .box-individual > img{
+        width: 100%;
+    }
+
+    .box-horarios{
+        margin-top: 0px;
+    } 
+
+    .coleta-titulo > span{
+        width: 8px;
+        height: 8px;
+    }
+
+    .coleta-titulo > h2{
+        font-size: 16px;
+    }
+
+    .box-individual > p{
+        font-size: 14px;
+    }
+
+    .sessao-coleta{
+        gap: 10px;
+    }
+
+}
 
 
+@media (max-width: 850px){
+    .box-coleta{
+       border: 1px solid black;
+       width: 65%;
+    }
+}
+
+@media (max-width: 600px){
+    .box-coleta{
+       border: 1px solid black;
+       width: 80%;
+    }
+
+    .sessao-coleta > p{
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    .sessao-coleta > h1{
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+}
