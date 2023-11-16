@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8144c0d34e.js" crossorigin="anonymous"></script>
     <title>pagina principal</title>
 </head>
 <body>
@@ -14,14 +15,26 @@
                 <a href=""><li>Marktplace</li></a>
                 <a href=""><li>Blog</li></a>
                 <a href=""><li>Sobre nós</li></a>
+
+                
             </ul>
+
+            <div class="mobile_menu_icon">
+                <button class="btn_menu_mobile" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
             <div class="buttons-header">
                 <button type="button" class="button-entrar">Entrar</button>
                 <button type="button" class="button-cadastrar">Cadastrar</button>
             </div>
-
             
         </nav>
+
+        <div class="mobile_menu">
+            <a href=""><li>Marktplace</li></a>
+            <a href=""><li>Blog</li></a>
+            <a href=""><li>Sobre nós</li></a>
+        </div>
         
         <section class="sessao-header">
          <video src="/video/pitch.mp4" 
@@ -35,5 +48,6 @@
         <button type="button" class="button-artesao top-fill">ARTESÕES</button>
         </section>
     </header>
+    <script src="/js/forms.js"></script>
 </body>
 </html>
