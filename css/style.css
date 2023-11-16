@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
 /* Estilos da Main */
 main .box{
-    margin: 20px;
+    margin: 50px;
     padding: 15px;
-    font-family: 'Poppins', sans-serif;
     font-size: 25px;
     color: #1B1B1B;
 }
 /* Estilos da CaixaS */
 .boxtitle h1{
     text-align: center;
+    margin-bottom: 25px;
+    margin-bottom: 20px;
+    padding: 30x;
 }
 
-.boxtitle h1 span{
+.cor{
    color: #0A2E8C;
 }
 .flexbox{
@@ -40,11 +49,17 @@ main .box{
 .flexbox .item-3 {
     border-radius: 15px;
     color: white;
-    margin: 25px;
+    margin: 10px;
+    padding: 25px;
 }
 .flexbox > div img {
     width: 41px;
     height: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.flexbox > div h2{
+    margin: 25px;
 }
 .flexbox .item-1{
     background: linear-gradient(58deg, #020A1E 19.59%, #0F3083 105.59%);
@@ -55,7 +70,90 @@ main .box{
 .flexbox .item-3{
     background: linear-gradient(293deg, #020A1E 31.07%, #0F3083 110.93%);
 }
-@media only screen and (max-width: 768px) {
+/* criação da tag de artesão*/
+#art {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    border: solid;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+#texto {
+    color: white;
+    margin: 25px;
+    padding: 25px;
+    z-index: 1; 
+    
+}
+
+#texto h1 {
+    padding-left: 30px;
+    margin-right: 40%;
+}
+
+#texto p {
+    margin-right: 40%;
+    padding: 30px;
+}
+
+#img {
+    position: absolute;
+    margin-left: 65%;
+}
+
+#img img {
+    width: 100%;
+    margin-right: 50%;  
+}
+#art-botao {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+#art-botao button {
+    background-color: transparent;
+    border: #1C8C2E solid 2px;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+#art-botao button:hover {
+    background-color: #1C8C2E; 
+    transform: scale(1.1);
+}
+#parceiros{
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#titulo h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+#elementos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 25px;
+   
+}
+#elementos > img {
+    width: 40%; 
+    max-width: 150px; 
+}
+
+@media only screen and (max-width: 830px) {
     .flexbox > div {
         flex: 100%; 
         font-size: 14px;
@@ -63,4 +161,26 @@ main .box{
         box-sizing: border-box;
         padding: 15px;
     }
+    #texto {
+        padding: 15px; 
+        text-align: center;
+    }
+
+    #texto h1 {
+        padding-left: 0; 
+        margin-right: 0;
+    }
+
+    #texto p {
+        margin-right: 0; 
+        padding: 15px; 
+    }
+
+    #img {
+       display: none;
+    }
+    #art-botao{
+        text-align: center;
+    }
+
 }
