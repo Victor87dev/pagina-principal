@@ -58,7 +58,6 @@ main .box{
 @media only screen and (max-width: 768px) {
     .flexbox > div {
         flex: 100%; 
-        max-width: none;
         font-size: 14px;
         width: 100%;
         box-sizing: border-box;
