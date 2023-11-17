@@ -18,11 +18,11 @@ main .box{
 }
 /* Estilos da CaixaS */
 .boxtitle h1{
-    text-align: center;
-    margin-bottom: 25px;
-    margin-bottom: 20px;
-    padding: 30x;
-}
+        text-align: center;
+        margin-bottom: 20px; 
+        padding: 15px; 
+    }
+  
 
 .cor{
    color: #0A2E8C;
@@ -116,7 +116,7 @@ main .box{
 
 #art-botao button {
     background-color: transparent;
-    border: #1C8C2E solid 2px;
+    border: #1C358C solid 2px;
     color: white;
     padding: 15px 20px;
     border-radius: 5px;
@@ -126,7 +126,7 @@ main .box{
 }
 
 #art-botao button:hover {
-    background-color: #1C8C2E; 
+    background: linear-gradient(91deg, #1C358C -6.25%, #1568B5 116.9%); 
     transform: scale(1.1);
 }
 #parceiros{
@@ -154,6 +154,10 @@ main .box{
 }
 
 @media only screen and (max-width: 830px) {
+    .boxtitle h1{
+        font-size: 25px;
+
+    }
     .flexbox > div {
         flex: 100%; 
         font-size: 14px;
@@ -169,11 +173,13 @@ main .box{
     #texto h1 {
         padding-left: 0; 
         margin-right: 0;
+        text-align: start;
     }
 
     #texto p {
         margin-right: 0; 
         padding: 15px; 
+        text-align: start;
     }
 
     #img {
