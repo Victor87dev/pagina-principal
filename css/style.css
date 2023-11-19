@@ -8,12 +8,13 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #fff;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -27,7 +28,7 @@ header {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 100%;
-    height: 95%;
+    height: 100vh;
 }
 
 nav {
@@ -212,7 +213,7 @@ a {
 
 main {
     height: 65%;
-    width: 70%;
+    width: 100%;
 }
 
 .sessao-coleta {
@@ -221,7 +222,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 100%;
+    height: 590px;
     margin: 150px;
 }
 
@@ -230,7 +231,7 @@ main {
     flex-direction: row;
     justify-content: center;
     gap: 50px;
-    height: 80%;
+    height: 90%;
     width: 100%;
 }
 
@@ -267,7 +268,7 @@ h2 {
 .box-individual {
     box-shadow: rgb(0, 0, 0) 0px 0px 8px;
     border-radius: 6px;
-    height: 90%;
+    height: 100%;
     transition: all ease .5s;
 }
 
@@ -297,7 +298,6 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     gap: 10px;
 }
 
@@ -363,11 +363,10 @@ h2 {
     margin-top: 10%;
     display: flex;
     justify-content: center;
-    border: solid;
     align-items: center;
     background-color: black;
     position: relative;
-    margin-bottom: 10%;
+    width: 100%;
 }
 
 #texto {
@@ -394,9 +393,14 @@ h2 {
 }
 
 #img img {
-    width: 100%;
-    margin-right: 50%;  
+    width: 80%;
+    margin-right: 50%;
+    border-radius: 8px; 
+    margin-top: 50px;
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: 3.1s; 
 }
+
 #art-botao {
     margin-top: 10px;
     margin-left: 25px;
@@ -410,7 +414,7 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease; 
+    transition: .3s ease; 
 }
 
 #art-botao button:hover {
@@ -418,10 +422,11 @@ h2 {
     transform: scale(1.1);
 }
 #parceiros{
-    margin: 60px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 120px;
 }
 #titulo h1{
     margin-bottom: 40px;
@@ -441,17 +446,6 @@ h2 {
     max-width: 150px; 
 }
 
-
-@keyframes animar1 {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
-}
-
 .box-individual:hover>.animacao:nth-of-type(2) {
     position: absolute;
     top: 0;
@@ -463,16 +457,6 @@ h2 {
     animation-delay: 1s;
 }
 
-@keyframes animar2 {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(100%);
-    }
-}
-
 .box-individual:hover>.animacao:nth-of-type(3) {
     position: absolute;
     bottom: 0;
@@ -481,16 +465,6 @@ h2 {
     height: 3px;
     background: linear-gradient(to left, transparent, #2057E3);
     animation: animar3 2s linear infinite;
-}
-
-@keyframes animar3 {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
 }
 
 .box-individual:hover>.animacao:last-of-type {
@@ -504,6 +478,173 @@ h2 {
     animation-delay: 1s;
 }
 
+footer {
+    background-color: #030D25;
+    width: 100%;
+}
+
+.footer_media {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 44px;
+}
+
+
+.footer_media_email span {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35.16px;
+    letter-spacing: 0em;
+}
+
+.footer_media_email_form {
+    position: relative;
+}
+
+.footer_media_email_label {
+    display: flex;
+    align-items: center;
+}
+
+.footer_media_email_label span:nth-child(1) {
+    margin: 8px;
+    
+}
+
+.footer_media_socialmedia p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.13px;
+    width: 355px;
+}
+
+.footer_media_socialmedia ul {
+    display: block;
+    margin-top: 56px;
+}
+
+.footer_media_socialmedia ul li {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.09px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer_media_socialmedia ul li span {
+    margin-left: 8px;
+}
+.ponto_verde {
+    width: 10px;
+    height: 10px;
+    background-color: #53E229;
+    border-radius: 50px;
+    margin-left: 0 !important;
+}
+
+.footer_copyright {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #030D25;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+ }
+
+ .footer_contatos{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    background-color: #04143C;
+}
+
+ .footer_contatos button {
+    color: #fff;
+    background-color: #030D25;
+    border: 1px solid #fff;
+    padding: 9px 24px;
+    cursor: pointer;
+ }
+
+ .contatos > ul > li{
+   color: #fff;
+   margin-top: 20px;
+   margin-bottom: -60px;
+   font-size: 20px;
+ }
+
+ .contatos{
+    display: flex;
+    height: 170px;
+ }
+
+ .contatos > ul{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+
+
+/* -------- KEYFRAMES ---------*/
+
+ @keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes animar1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animar2 {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animar3 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 @keyframes animar4 {
     0% {
         transform: translateY(100%);
@@ -512,130 +653,4 @@ h2 {
     100% {
         transform: translateY(-100%);
     }
-}
-
-
-
-
-@media (max-width: 1100px) {
-    ul {
-        display: none;
-    }
-
-    .mobile_menu_icon {
-        display: flex;
-        padding: 10px;
-    }
-
-    .btn_menu_mobile {
-        background-color: transparent;
-        border: none;
-        color: #fff;
-    }
-
-    .mobile_menu>a>li {
-        list-style-type: none;
-    }
-
-    .mobile_menu {
-        flex-direction: column;
-        gap: 10px;
-        margin-right: 135px;
-        text-align: center;
-    }
-
-    .mobile_menu>a {
-        border-top: 1px solid #fff;
-        padding: 7px;
-    }
-
-    .mobile_menu_icon>.btn_menu_mobile>i {
-        font-size: 25px;
-    }
-
-    .open {
-        display: flex;
-    }
-        main {
-            height: 100%;
-    }
-
-        .sessao-coleta {
-            height: 100%;
-    }
-
-        .box-coleta {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 45%;
-            height: 85%;
-    }
-
-        .sessao-coleta>h1 {
-            font-size: 40px;
-            font-weight: 900;
-    }
-
-        .sessao-coleta>p {
-            font-size: 18px;
-            font-weight: 900;
-    }
-
-        .box-individual {
-            height: 50%;
-            width: 80%;
-    }
-
-        .box-individual>img {
-            width: 100%;
-    }
-
-        .box-horarios {
-            margin-top: 0px;
-    }
-
-        .coleta-titulo>span {
-            width: 8px;
-            height: 8px;
-        }
-
-        .coleta-titulo>h2 {
-            font-size: 16px;
-        }
-
-        .box-individual>p {
-            font-size: 14px;
-        }
-
-        .sessao-coleta {
-            gap: 10px;
-        }
-
-    }
-
-@media (max-width: 850px) {
-    .box-coleta {
-        border: 1px solid black;
-        width: 65%;
-    }
-}
-
-@media (max-width: 600px) {
-    .box-coleta {
-        border: 1px solid black;
-        width: 80%;
-    }
-
-    .sessao-coleta>p {
-        font-size: 15px;
-        font-weight: 900;
-    }
-
-    .sessao-coleta>h1 {
-        font-size: 30px;
-        font-weight: 900;
-    }
-
 }
